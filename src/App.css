@@ -1,0 +1,136 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Main App Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* CV Form and Preview Container */
+.cv-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh; /* Set height */
+  overflow: hidden; /* Prevent layout overflow */
+}
+
+/* Form Section */
+.form-section{
+  width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow content overflow */
+}
+.preview-section {
+  width: 800px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow content overflow */
+}
+
+/* Matching Height */
+.form-section,
+.preview-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align form content nicely */
+}
+
+/* Headings */
+.form-section h2,
+.preview-section h1 {
+  color: #34495e;
+}
+
+/* Form Inputs */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Preview Section */
+.cv-preview {
+  padding-top: 20px;
+}
+
+.cv-preview h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cv-preview h2 {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.cv-preview p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.cv-preview div {
+  margin-bottom: 15px;
+}
+
+/* Scrollbar Styling */
+.form-section::-webkit-scrollbar,
+.preview-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-section::-webkit-scrollbar-thumb,
+.preview-section::-webkit-scrollbar-thumb {
+  background-color: #bdc3c7;
+  border-radius: 5px;
+}
